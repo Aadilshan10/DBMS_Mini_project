@@ -22,7 +22,7 @@ import java.sql.SQLException;
 public class Connect {
     private static final String URL = "jdbc:mysql://localhost:3306/projectdbms";
     private static final String USER = "root";
-    private static final String PASSWORD = "messi24ucl";
+    private static final String PASSWORD = "";
 
     public static Connection getConnection() throws SQLException {
         // Load and register the JDBC driver

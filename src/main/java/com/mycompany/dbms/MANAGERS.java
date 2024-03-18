@@ -617,7 +617,7 @@ String sql = "SELECT contract_id FROM contracts c " +
     }//GEN-LAST:event_cid1ActionPerformed
 
     private void insertBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_insertBTNActionPerformed
-        if(b==1||b==3){
+        if(b==1||b==4){
             if(fname1.equals("") || lname1.equals("") || age1.equals("") || phno1.equals("") || team1.getSelectedItem().equals(("___"))|| cid1.getSelectedItem().equals("___")){
                  JOptionPane.showMessageDialog(this, "ENTER AND SELECT ALL THE FIELDS ");
                  return;
@@ -701,7 +701,7 @@ String sql = "SELECT contract_id FROM contracts c " +
             }catch(NumberFormatException ex){
                 ex.printStackTrace();
             }
-            if(b==1||b==3){
+            if(b==1||b==4){
                 Class.forName("com.mysql.jdbc.Driver");
                 Connection con = Connect.getConnection();
                 Statement stm = con.createStatement();
@@ -742,7 +742,7 @@ String sql = "SELECT contract_id FROM contracts c " +
     }//GEN-LAST:event_age2ActionPerformed
 
     private void updateBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateBTNActionPerformed
-     if(b==1||b==3){
+     if(b==1||b==4){
             String selected=(String)updateOP.getSelectedItem();
             try{
 

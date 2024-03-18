@@ -626,7 +626,7 @@ private void updateWinnerComboBox() {
     }//GEN-LAST:event_timeopActionPerformed
 
     private void insertBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_insertBTNActionPerformed
-        if(b==1||b==4){
+        if(b==1||b==2){
             try{
             if(team1.getSelectedItem()==team2.getSelectedItem()){
                 JOptionPane.showMessageDialog(this, "Please select two different teams.", "Input Error", JOptionPane.ERROR_MESSAGE);
@@ -713,7 +713,7 @@ private void updateWinnerComboBox() {
          try{
             String selected=(String)deleteOP.getSelectedItem();
 
-            if(b==1||b==4){
+            if(b==1||b==2){
                 Class.forName("com.mysql.jdbc.Driver");
                 Connection con = Connect.getConnection();
                 Statement stm = con.createStatement();

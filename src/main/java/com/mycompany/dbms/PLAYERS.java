@@ -755,7 +755,7 @@ cidOP1.removeItem(c);
     }//GEN-LAST:event_cidOPActionPerformed
 
     private void insertBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_insertBTNActionPerformed
-        if(b==1||b==3){
+        if(b==1||b==4){
             if(fname1.equals("") || lname1.equals("") || ageOP.getSelectedItem().equals("___") || nationOP.equals("___") || teamOP.getSelectedItem().equals(("___"))|| jcOP.getSelectedItem().equals("___") ||  cidOP.getSelectedItem().equals("___")){
                 JOptionPane.showMessageDialog(this, "ENTER AND SELECT ALL THE FIELDS ");
                 return;
@@ -825,6 +825,7 @@ cidOP1.removeItem(c);
     }//GEN-LAST:event_deleteOPActionPerformed
 
     private void deleteBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteBTNActionPerformed
+        
         try{
             String selected=(String)deleteOP.getSelectedItem();
             int sel=0;
@@ -833,7 +834,7 @@ cidOP1.removeItem(c);
             }catch(NumberFormatException ex){
                 ex.printStackTrace();
             }
-            if(b==1||b==3){
+            if(b==1||b==4){
                 
                 Class.forName("com.mysql.jdbc.Driver");
                 Connection con = Connect.getConnection();
@@ -889,7 +890,7 @@ cidOP1.removeItem(c);
     }//GEN-LAST:event_ageOP2ActionPerformed
 
     private void updateBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateBTNActionPerformed
-        if(b==1||b==3){
+        if(b==1||b==4){
             String selected=(String)updateOP.getSelectedItem();
             try{
 

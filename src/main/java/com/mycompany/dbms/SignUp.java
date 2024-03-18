@@ -173,7 +173,7 @@ public class SignUp extends javax.swing.JFrame {
         // TODO add your handling code here:
         try{
            Class.forName("com.mysql.jdbc.Driver");
-           Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/projectdbms?useSSL=false","root","messi24ucl");
+           Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/projectdbms?useSSL=false","root","");
         String email=emailField.getText();
         String password=passwordField.getText();
         Statement stm = con.createStatement();
